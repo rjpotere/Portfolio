@@ -1,5 +1,5 @@
 :root {
-    --main-font: 
+    --main-font: 'Open Sans', sans-serif;
 }
 
 * {
@@ -17,14 +17,17 @@ header {
 }
 
 header h1 {
-    font-size: 45px;
+    font-size: 46px;
     text-align: center;
-    letter-spacing: 3px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
     color: white;
+    font-family: var(--main-font);
 }
 
 li {
     margin-top: 20px;
+    font-family: var(--main-font);
 }
 
 nav {
@@ -53,7 +56,6 @@ body {
 
 .about-content img {
     width: 300px;
-    height: 350px;
     margin-top: 10px;
 }
 
@@ -79,11 +81,6 @@ body {
 
 
 @media screen and (min-width: 768px) {
-
-    header h1 {
-        font-size: 45px;
-        margin: 0 20px;
-    }
 
     .nav-bar {
         margin: 0 40px;
