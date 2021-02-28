@@ -109,13 +109,13 @@ body {
 
 
 @media screen and (min-width: 768px) {
-    
+
     header h1 {
         font-size: 45px;
         margin: 0 20px;
     }
 
-    li a {
+    .nav-bar {
         margin: 0 40px;
     }
 
@@ -184,4 +184,5 @@ body {
     .contact-content {
         border-left: 2px solid black;
     }
+
 }
