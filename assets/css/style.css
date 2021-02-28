@@ -1,0 +1,156 @@
+:root {
+    --main-font: 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: black;
+}
+
+header h1 {
+    letter-spacing: 3px;
+    color: white;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+li {
+    display: flex;
+    margin-top: 15px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 4px;
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+}
+
+body {
+    background: white;
+}
+
+.box{
+    text-align: center;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.about-me h2, .work h2, .contact h2 {
+    font-size: 35px;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    text-align: justify;
+}
+
+.bio-photo {
+    width: 40%;
+    margin-left: 20px;
+}
+
+.content p, .content ul {
+    padding: 10px 60px 10px 60px;
+}
+
+.contact ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contact li {
+    margin-left: 20px;
+}
+
+.phone-number, .email {
+    margin-right: 5px;
+}
+
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    header h1 {
+        font-size: 45px;
+    }
+
+    nav a {
+        margin-left: 15px;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        letter-spacing: 4px;
+        border-bottom: 1px solid white;
+        padding-bottom: 2px;
+    }
+
+    .about-me h2, .work h2, .contact h2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end; 
+        width: 25%;
+        padding-right: 2%;
+        font-size: 35px;
+        margin-left: 2px;
+    }
+    
+    .about-me {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .content {
+        width: 60%;
+        text-align: left;
+        border-left: 2px solid black;
+    }
+    
+    .content p, .content ul {
+        padding: 0 20px 20px 20px;
+    }
+
+    .contact li {
+        margin-left: 20px;
+    }
+    
+    .box {
+        display: flex;
+        margin-top: 20px;
+    }
+
+}
