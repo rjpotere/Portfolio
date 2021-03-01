@@ -17,13 +17,13 @@
         <nav>
             <ul>
                 <li class="nav-bar">
-                    <a href="#">About</a> 
+                    <a href="#bio">About</a> 
                 </li>
                 <li class="nav-bar">
-                    <a href="#">Featured</a> 
+                    <a href="#current-projects">Featured</a> 
                 </li>
                 <li class="nav-bar">
-                    <a href="#">Contact</a> 
+                    <a href="#contact-me">Contact</a> 
                 </li>
                 <li class="nav-bar">
                     <a href="#">Resume</a> 
@@ -33,7 +33,7 @@
     </header>
 
     <main>
-        <section class="about-me">
+        <section id="bio" class="about-me">
             <div class="img-box">
                 <img src="assets/images/ryan-potere-photo.png">
             </div>
@@ -46,22 +46,34 @@
         </section>
 
         <section class="featured">
-            <div class="featured-projects"> 
+            <div id="current-projects" class="featured-projects"> 
+                <h2>Featured Work</h2>
                 <div class="main-project-container">
-                    <img class="marketing" src="assets/images/digital-marketing-meeting.jpg">
+                    <a href="https://rjpotere.github.io/code-refactor/" target="_blank">
+                        <img class="marketing" src="assets/images/digital-marketing-meeting.jpg">
+                    </a>
+                    <h3>Horiseons Marketing Code-Refactor</h3>
                 </div>
+
                 <div class="secondary-project-container">
                     <div class="bar-container">
-                        <img class="bar" src="assets/images/the-gavel.png">
+                        <a href="#">
+                            <img class="bar" src="assets/images/the-gavel.png">
+                        </a>
+                        <h3>Project 2</h3>
                     </div>
+
                     <div class="record-container">
-                        <img class="record" src="assets/images/firefly-studios.png">
+                        <a href="#">
+                            <img class="record" src="assets/images/firefly-studios.png">
+                        </a>
+                        <h3>Project 3</h3>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact">
+        <section id="contact-me" class="contact">
             <div class="box">
                     <h2>Contact Me</h2>
                 <div class="contact-content">
@@ -79,7 +91,7 @@
     </main>
 
     <footer>
-        <h4></h4>
+        <h4>est. 2021</h4>
     </footer>
 
 </body>
