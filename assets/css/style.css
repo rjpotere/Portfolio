@@ -1,5 +1,7 @@
 :root {
     --main-font: 'Open Sans', sans-serif;
+    --font-color: #2b2a29;
+    --header-color: #f3f1f1;
 }
 
 * {
@@ -10,18 +12,16 @@
 
 header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-    background: black;
+    justify-content: space-between;
+    padding: 20px 20px 150px 40px;
+    background: var(--header-color);
 }
 
 header h1 {
-    font-size: 46px;
-    text-align: center;
+    font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 15px;
-    color: white;
+    color: var(--font-color);
     font-family: var(--main-font);
 }
 
@@ -36,9 +36,8 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: white;
     letter-spacing: 4px;
-    border-bottom: 1px solid white;
+    color: var(--font-color);
     padding-bottom: 2px;
 }
 
@@ -46,22 +45,34 @@ body {
     background: white;
 }
 
-.box{
-    text-align: center;
+.about-me {
+    display: flex;
+    justify-content: center;
+    background: var(--header-color);
+    padding-bottom: 140px;
 }
 
-.img-box{
-    text-align: center;
+.about-box {
+    padding-left: 75px;
 }
 
-.about-content img {
-    width: 300px;
-    margin-top: 10px;
+.about-box p, .about-box h2 {
+    font-family: var(--main-font);
+    color: var(--font-color);
 }
 
-.about-content {
-    width: 100%;
-    text-align: justify;
+.about-box h2 {
+    text-transform: uppercase;
+}
+
+.img-box {
+    order: 1;
+    position: relative;
+    bottom: 55px;
+}
+
+.img-box img {
+    width: 315px;
 }
 
 .about-me h2, .work h2, .contact h2 {
@@ -70,6 +81,40 @@ body {
 
 .content {
     text-align: justify;
+}
+
+.featured {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.featured-projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondary-project-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.bar-container {
+    margin-right: 10px;
+}
+
+.marketing {
+    width: 700px;
+}
+
+.record, .bar  {
+    width: 320px;
+    height: 478.22px;
+}
+
+.contact {
+    padding-bottom: 40px;
 }
 
 .about-content p, .content p {
@@ -83,68 +128,33 @@ body {
 @media screen and (min-width: 768px) {
 
     .nav-bar {
-        margin: 0 40px;
+        margin: 0 10px;
     }
 
     li {
         display: inline-block;
     }
 
-    nav ul {
-        justify-content: center;
-        align-items: baseline;
-    }
-
     nav a {
         text-decoration: none;
-        color: white;
         letter-spacing: 4px;
-        border-bottom: 1px solid white;
         padding-bottom: 2px;
-    }
-
-    .about-me h2, .work h2, .contact h2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end; 
-        width: 20%;
-        padding-right: 2%;
-        font-size: 35px
     }
 
     .about-content p {
         padding: 10px 60px 10px 20px;
     }
 
-    .about-content {
-        width: 60%;
+    .about-box {
+        margin-right: 95px;
+        width: 35%;
         text-align: left;
-        border-left: 2px solid black;
     }
 
-    .content {
-        width: 60%;
-        text-align: left;
-        border-left: 2px solid black;
-    }
-    
-    .content p, .content ul {
-        padding: 0 20px 20px 20px;
+    .about-box p {
+        margin-top: 25px;
     }
 
-   
-    
-    .box {
-        display: flex;
-        margin-top: 20px;
+    .featured h2, .contact h2 {
+        font-size: 35px
     }
-
-    .contact li {
-        margin-left: 20px;
-    }
-
-    .contact-content {
-        border-left: 2px solid black;
-    }
-
-}
