@@ -10,6 +10,11 @@
     padding: 0;
 }
 
+h1, 
+h2 {
+    text-transform: uppercase;
+}
+
 header {
     display: flex;
     text-align: center;
@@ -19,7 +24,7 @@ header {
 }
 
 header h1 {
-    text-transform: uppercase;
+    text-transform: var(--uppercase);
     letter-spacing: 15px;
     color: var(--font-color);
     font-family: var(--main-font);
@@ -45,11 +50,6 @@ nav a {
     padding-bottom: 2px;
 }
 
-.nav-bar a:hover {
-    text-decoration: underline;
-    transition: 1s;
-}
-
 body {
     background: white;
 }
@@ -69,10 +69,6 @@ body {
 .about-box p, .about-box h2 {
     font-family: var(--main-font);
     color: var(--font-color);
-}
-
-.about-box h2 {
-    text-transform: uppercase;
 }
 
 .img-box {
@@ -110,6 +106,7 @@ body {
     font-family: var(--main-font);
     color: var(--font-color);
     font-size: 20px;
+    text-align: center;
 }
 
 .main-project-container img:hover {
@@ -132,11 +129,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .secondary-project-container {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .record, .bar  {
@@ -169,13 +169,14 @@ body {
 }
 
 footer {
-    margin-bottom: 10px;
+    padding:20px;
+    background: var(--font-color);
 }
 
 footer h4 {
     text-align: center;
     font-family: var(--main-font);
-    color: var(--font-color);
+    color: var(--header-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -244,11 +245,16 @@ footer h4 {
         height: 478.22px;
     }
 
+    .main-project-container h3, .bar-container h3, .record-container h3 {
+        font-family: var(--main-font);
+        color: var(--font-color);
+        font-size: 20px;
+    }
+
     .secondary-project-container {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        margin-top: 10px;
     }
 
     .box {
