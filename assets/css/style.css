@@ -12,8 +12,9 @@
 
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 20px 20px 150px 40px;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px 20px 0px 40px;
     background: var(--header-color);
 }
 
@@ -23,6 +24,10 @@ header h1 {
     letter-spacing: 15px;
     color: var(--font-color);
     font-family: var(--main-font);
+}
+
+ul {
+    list-style-type: none;
 }
 
 li {
@@ -47,13 +52,14 @@ body {
 
 .about-me {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background: var(--header-color);
-    padding-bottom: 140px;
+    padding: 30px;
 }
 
 .about-box {
-    padding-left: 75px;
+    text-align: center;
 }
 
 .about-box p, .about-box h2 {
@@ -67,12 +73,10 @@ body {
 
 .img-box {
     order: 1;
-    position: relative;
-    bottom: 55px;
 }
 
 .img-box img {
-    width: 315px;
+    width: 265px;
 }
 
 .about-me h2, .work h2, .contact h2 {
@@ -86,7 +90,7 @@ body {
 .featured {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .featured-projects {
@@ -94,23 +98,27 @@ body {
     flex-direction: column;
 }
 
-.secondary-project-container {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
-}
-
-.bar-container {
-    margin-right: 10px;
+.main-marketing-container {
+    text-align: center;
 }
 
 .marketing {
-    width: 700px;
+    width: 100%;
+}
+
+.bar-container, .record-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondary-project-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .record, .bar  {
-    width: 320px;
-    height: 478.22px;
+    width: 100%;
 }
 
 .contact {
@@ -127,6 +135,14 @@ body {
 
 @media screen and (min-width: 768px) {
 
+    header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px 150px 40px;
+    background: var(--header-color);
+}
+
     .nav-bar {
         margin: 0 10px;
     }
@@ -141,10 +157,20 @@ body {
         padding-bottom: 2px;
     }
 
-    .about-content p {
-        padding: 10px 60px 10px 20px;
+    .about-me {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: var(--header-color);
+        padding-bottom: 140px;
     }
 
+    .img-box {
+        order: 1;
+        position: relative;
+        bottom: 55px;
+    }
+    
     .about-box {
         margin-right: 95px;
         width: 35%;
@@ -155,6 +181,42 @@ body {
         margin-top: 25px;
     }
 
+    .featured {
+        margin-top: 30px;
+    }
+    
+
+    .bar-container {
+        margin-right: 10px;
+    }
+    
+    .marketing {
+        width: 700px;
+    }
+    
+    .record, .bar  {
+        width: 320px;
+        height: 478.22px;
+    }
+
+    .secondary-project-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+    
+
     .featured h2, .contact h2 {
         font-size: 35px
+    }
+
+    @media screen and (max-width: 800px) {
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+        }
+        
     }
