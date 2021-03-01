@@ -45,6 +45,11 @@ nav a {
     padding-bottom: 2px;
 }
 
+.nav-bar a:hover {
+    text-decoration: underline;
+    transition: 1s;
+}
+
 body {
     background: white;
 }
@@ -107,6 +112,18 @@ body {
     font-size: 20px;
 }
 
+.main-project-container img:hover {
+    filter: blur(2px);
+}
+
+.bar-container img:hover {
+    filter: blur(2px);
+}
+
+.record-container img:hover {
+    filter: blur(2px);
+}
+
 .marketing {
     width: 100%;
 }
@@ -137,6 +154,11 @@ body {
 .about-content p, .content p {
     padding: 10px 20px 10px 20px;
 }
+
+.info li {
+    padding: 10px;
+}
+
 .phone-number, .email {
     margin-right: 5px;
 }
