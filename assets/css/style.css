@@ -10,10 +10,15 @@
     padding: 0;
 }
 
+/*display h1 and h2 as uppercase*/
+
 h1, 
 h2 {
     text-transform: uppercase;
 }
+
+
+/*Display header as flex column for cellphone*/
 
 header {
     display: flex;
@@ -43,6 +48,8 @@ nav {
     margin-top: 20px;
 }
 
+/*edit letter spaceing to resemble h1 tag*/
+
 nav a {
     text-decoration: none;
     letter-spacing: 4px;
@@ -71,6 +78,8 @@ body {
     font-family: var(--main-font);
     color: var(--font-color);
 }
+
+/*change order of header picture to be on the right side*/
 
 .img-box {
     order: 1;
@@ -109,6 +118,8 @@ body {
     font-size: 20px;
     text-align: center;
 }
+
+/*add blurr effect when hovering over projects*/
 
 .main-project-container img:hover {
     filter: blur(2px);
