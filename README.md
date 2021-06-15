@@ -4,7 +4,7 @@ When accessing my portfolio, you are presented with an about me section and a bi
 
 ![photo](assets/images/portfolio-update.png)
 
-There is a hort bio about me which is accompanied by a photo of me.
+There is a short bio about me which is accompanied by a photo of me.
 
 If you select one of the navigation buttons, it will take you to each section of my webpage.
 
